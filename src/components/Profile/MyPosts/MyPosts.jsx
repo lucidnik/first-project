@@ -25,8 +25,11 @@ const MyPosts = (props) => {
             <div className={s.postsBlock}>
                 <h3>My posts</h3>
                 <div>
-                    <textarea ref={newPostElement} value={props.profilePage.newPostText} onChange={onPostChange}/>
-                    <button onClick={addPost}>Add Post</button>
+                    <textarea className={s.textArea} ref={newPostElement} value={props.profilePage.newPostText}
+                              onChange={onPostChange}/>
+                    <span>
+                        <button className={s.addPostBtn} onClick={addPost}>Add Post</button>
+                    </span>
                 </div>
 
                 <div className={s.posts}>
