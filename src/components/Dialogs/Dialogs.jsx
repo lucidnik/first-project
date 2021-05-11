@@ -2,7 +2,6 @@ import React from "react";
 import s from "./Dialogs.module.css";
 import Message from "./Message/Message";
 import DialogItem from "./DialogItem/DialogsItem";
-import {updateNewMessageText} from "../../redux/state";
 
 const Dialogs = (props) => {
 
@@ -19,7 +18,7 @@ const Dialogs = (props) => {
 
     let onMessageChange = () => {
         let text = newMessageElement.current.value
-        updateNewMessageText(text)
+       props.updateNewMessageText(text)
     }
 
     return (
