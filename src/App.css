@@ -8,6 +8,9 @@
     grid-template-rows: 60px 1fr;
     grid-template-columns: 2fr 16fr;
 
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+
 }
 
 .app-wrapper-content {
